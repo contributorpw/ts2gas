@@ -176,7 +176,7 @@ const ts2gas = (source: string, transpileOptions: ts.TranspileOptions = {}) => {
   const statics: ts.TranspileOptions = {
     compilerOptions: {
       emitDeclarationOnly: false,  // ts.transpileModule() will crash if set to true
-      target: ts.ScriptTarget.ES3,
+      target: ts.ScriptTarget.ES2015,
       module: ts.ModuleKind.None,
     },
     transformers: {
